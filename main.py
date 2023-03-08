@@ -31,12 +31,12 @@ def writeToFile(email):
 def main():
 	banner()
 	try:
-		numEmails = int(input("[+] quante ne vuoi creare?: "))
+		numEmails = int(input("[+] How much? "))
 	except:
 		print("[!] Invalid Value Entered. Restarting in 2 secs...")
 		time.sleep(2)
 		main()
-	writeOrNot = str(input("[+] vuoi salvarle in un file? (Y/N): "))
+	writeOrNot = str(input("[+] Wanna save them in a file? (Y/N): "))
 	write = False
 	if 'y' == writeOrNot[0].lower():
 		write = True
@@ -48,8 +48,8 @@ def main():
 			email = getEmail()
 			if '@' not in email:
 				print("""
-					[!] IP BANNATO USA UNA VPN O RESTARTA IL ROUTER 10MINUTEMAIL.NET.
-						CAMBIA IP CON UNA VPN O RESTARTA IL ROUTER.
+					[!] IP BANNED USE A VPN OR RESTART THE ROUTER!
+						
 					""")
 				break
 			else:
